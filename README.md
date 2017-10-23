@@ -3,7 +3,7 @@
 This should perform the following steps with travis:
 
 * Install the Unite JS CLI tool
-* Generate an app with PractTypeScript Profile
+* Generate an app with PreactTypeScript Profile
 * Add docker as a target platform
 * Build (Development)
 * Unit Test (Development)
