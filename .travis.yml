@@ -3,7 +3,7 @@ sudo: required
 services:
   - docker
 node_js:
-  - "node"
+  - "8"
 before_install:
   - npm install -g unitejs-cli@1.6.1
   - npm install -g gulp
