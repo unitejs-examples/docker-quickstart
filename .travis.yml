@@ -5,7 +5,7 @@ services:
 node_js:
   - "node"
 before_install:
-  - npm install -g unitejs-cli@1.5.1
+  - npm install -g unitejs-cli@1.6.2
   - npm install -g gulp
   - unite configure --profile=PreactTypeScript --title="Docker QuickStart" --packageName=unitejs-docker-quickstart --outputDirectory=./
   - unite platform --operation=add --platformName=Docker
@@ -19,7 +19,7 @@ script:
   - gulp e2e || travis_terminate 1
   - gulp build --buildConfiguration=prod || travis_terminate 1
   - gulp e2e || travis_terminate 1
-  - gulp platform-docker-package --buildConfiguration=prod
+  - gulp platform-docker-package --buildConfiguration=prod || travis_terminate 1
 cache:
   directories:
   - www/node_modules
