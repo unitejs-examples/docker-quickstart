@@ -11,3 +11,8 @@ This should perform the following steps with travis:
 * Build (Production)
 * E2E Test (Production)
 * Platform Package for Docker
+
+[![Build Status][travis-image]][travis-url]
+
+[travis-url]: https://travis-ci.org/unitejs-examples/docker-quickstart/
+[travis-image]: http://img.shields.io/travis/unitejs-examples/docker-quickstart/master.svg?style=flat
